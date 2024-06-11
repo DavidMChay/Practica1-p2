@@ -24,3 +24,45 @@ main{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
+main .sec{
+    padding-top:15px;
+}
+
+main form{
+    padding: 20px;
+}
+
+.list-to-do {
+    margin-top: 20px;
+}
+
+.task-item {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+    opacity: 0.9;
+}
+
+.task-item.expired {
+    background-color: #f8d7da;
+}
+
+.task-item .task-details {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.task-item .task-actions button {
+    margin-left: 5px;
+}
