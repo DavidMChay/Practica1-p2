@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Validar fecha de fin para marcar como completada
             completeButton.addEventListener('click', function() {
                 if (new Date() > endDateObj) {
-                    alert('No se puede marcar una tarea como completada si la fecha de fin ya pasó.');
+                    alert('No se puede marcar como completada una tarea que ya finalizó.');
                 } else {
                     taskItem.classList.add('completed');
                     completeButton.classList.add('d-none');
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Confirmar desmarcar tarea
             uncompleteButton.addEventListener('click', function() {
-                if (confirm('¿Está seguro de que desea desmarcar la tarea como completada?')) {
+                if (confirm('¿Está seguro que desea desmarcar está tarea completada?')) {
                     taskItem.classList.remove('completed');
                     completeButton.classList.remove('d-none');
                     uncompleteButton.classList.add('d-none');
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Confirmar eliminación de tarea
             deleteButton.addEventListener('click', function() {
-                if (confirm('¿Está seguro de que desea eliminar esta tarea?')) {
+                if (confirm('¿Está seguro de que desea eliminar definitivamente esta tarea?')) {
                     listToDo.removeChild(taskItem);
                 }
             });
