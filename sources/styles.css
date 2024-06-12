@@ -8,12 +8,25 @@ body{
     margin: 0;
 }
 
+header{
+    padding-top:20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 header #title-header{
     font-family: 'Open Sans';
     font-weight:200;
     font-size: 40px;
     text-align: center;
     margin-top:18px;
+}
+
+header img{
+    width: 25%;
 }
 
 main{
@@ -68,5 +81,5 @@ main form{
 }
 
 footer{
-    margin-top:25px;
+    margin-top:20px;
 }
