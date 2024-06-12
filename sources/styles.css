@@ -1,48 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-body{
-    background-color: rgb(222, 227, 231);
-    display:flex;
+
+body {
+    display: flex;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     margin: 0;
 }
 
-header{
-    padding-top:20px;
+header {
+    padding-top: 20px;
     width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-header #title-header{
+header #title-header {
     font-family: 'Open Sans';
-    font-weight:200;
+    font-weight: 200;
     font-size: 40px;
     text-align: center;
-    margin-top:18px;
+    margin-top: 18px;
 }
 
-header img{
+header img {
     width: 25%;
 }
 
-main{
-    background-color: rgb(245, 245, 245);
+main {
     width: 80%;
-    padding: 20px;
+    padding: 15px;
     margin: 30px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-main .sec{
-    padding-top:15px;
+main .sec {
+    padding-top: 15px;
 }
 
-main form{
+main form {
     padding: 20px;
 }
 
@@ -80,6 +78,58 @@ main form{
     margin-left: 5px;
 }
 
-footer{
-    margin-top:20px;
+footer {
+    margin-top: 20px;
+}
+
+/* Estilos para tema claro */
+body {
+    background-color: rgb(222, 227, 231);
+    color: #000;
+}
+
+main {
+    background-color: rgb(245, 245, 245);
+}
+
+.invalid-feedback {
+    color: red;
+}
+
+.logo {
+    filter: invert(0%);
+}
+
+/* Estilos para tema oscuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #202020;
+        color: #ffffff;
+    }
+
+    main {
+        background-color: #3d3d3d;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .task-item {
+        background-color: #2e2e2e;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+
+    .task-item.completed {
+        background-color: #274d26;
+    }
+
+    .task-item.expired {
+        background-color: #5a1f1f;
+    }
+
+    .invalid-feedback {
+        color: #ff6b6b;
+    }
+
+    .logo {
+        filter: invert(100%);
+    }
 }
